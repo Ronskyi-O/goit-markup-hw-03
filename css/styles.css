@@ -17,8 +17,26 @@ body {
   background-color: var(--main-background-color);
 }
 
+/* Утилиты */
+
+h1,
+h2,
+h3,
+p,
 ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.conteiner {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 3px solid tomato;
 }
 /* Хедер */
 
