@@ -30,6 +30,12 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .conteiner {
   width: 1200px;
   padding: 0 15px;
@@ -211,10 +217,20 @@ ul {
 
 /* Блок Чем мы занимаемся */
 
+.jobs > .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
 .jobs .tittle {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  text-align: center;
 }
 
 /* Блок Наша команда */
