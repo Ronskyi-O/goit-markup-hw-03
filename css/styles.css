@@ -334,7 +334,14 @@ img {
   background-color: var(--footer-background-color);
 }
 
+.footer > .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -349,6 +356,7 @@ img {
 }
 
 .footer .address {
+  margin-bottom: 9px;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -365,6 +373,10 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contact:hover,
