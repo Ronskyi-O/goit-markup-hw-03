@@ -35,8 +35,6 @@ ul {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 3px solid tomato;
 }
 /* Хедер */
 
@@ -134,10 +132,16 @@ ul {
 /* Блок герой */
 
 .hero {
+  text-align: center;
   background-color: var(--footer-background-color);
 }
 
 .hero .tittle {
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -148,6 +152,11 @@ ul {
 }
 
 .hero .button {
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
