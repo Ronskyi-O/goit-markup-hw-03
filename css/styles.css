@@ -177,7 +177,23 @@ ul {
 
 /* Блок особенности */
 
+.features > .conteiner {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features .card {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features .card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features .tittle {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
