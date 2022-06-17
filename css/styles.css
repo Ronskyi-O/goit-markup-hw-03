@@ -38,7 +38,7 @@ img {
 
 .conteiner {
   width: 1200px;
-  padding: 0 15px;
+  padding: 94px 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -49,17 +49,16 @@ img {
 }
 
 .header > .conteiner {
+  padding-top: 24px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 /* Лого */
 
 .header .logo {
-  margin-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
 
   font-family: Raleway;
   font-size: 26px;
@@ -217,10 +216,13 @@ img {
 
 /* Блок Чем мы занимаемся */
 
-.jobs > .list {
+.jobs > .conteiner {
+  padding-top: 0;
+}
+
+.jobs .list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .jobs .tittle {
@@ -237,11 +239,6 @@ img {
 
 .team {
   background-color: var(--additional-background-color);
-}
-
-.team > .conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team .tittle {
@@ -293,7 +290,19 @@ img {
 
 /* Блок Портфолио */
 
+.portfolio .menu {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.menu > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio .button {
+  padding: 6px 22px;
+
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -304,6 +313,8 @@ img {
   color: var(--main-color);
   background-color: var(--additional-background-color);
 
+  border: 0 solid transparent;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -313,13 +324,42 @@ img {
   background-color: var(--hoover-color);
 }
 
+.portfolio .list {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: var(--main-background-color);
+  border: 1px solid #eeeeee;
+}
+
+.portfolio .card:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.portfolio .card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.img {
+  margin-bottom: 20px;
+}
+
 .portfolio .tittle {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio .text {
+  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
