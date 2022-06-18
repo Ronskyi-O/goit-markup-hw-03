@@ -38,19 +38,19 @@ img {
 
 .conteiner {
   width: 1200px;
-  padding: 94px 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 /* Хедер */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
 .header > .conteiner {
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
   align-items: center;
 }
@@ -137,6 +137,7 @@ img {
 /* Блок герой */
 
 .hero {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--footer-background-color);
 }
@@ -144,7 +145,6 @@ img {
 .hero .tittle {
   margin: auto;
   margin-bottom: 30px;
-  padding-top: 200px;
   width: 696px;
 
   font-weight: 900;
@@ -157,7 +157,6 @@ img {
 }
 
 .hero .button {
-  margin-bottom: 200px;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
@@ -182,10 +181,12 @@ img {
 
 /* Блок особенности */
 
+.features {
+  padding: 94px 0;
+}
+
 .features > .conteiner {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .features .card {
@@ -216,8 +217,8 @@ img {
 
 /* Блок Чем мы занимаемся */
 
-.jobs > .conteiner {
-  padding-top: 0;
+.jobs {
+  padding-bottom: 94px;
 }
 
 .jobs .list {
@@ -238,6 +239,8 @@ img {
 /* Блок Наша команда */
 
 .team {
+  padding: 94px 0;
+
   background-color: var(--additional-background-color);
 }
 
@@ -253,11 +256,13 @@ img {
 
 .team .list {
   display: flex;
-  justify-content: space-between;
+  margin: calc(-1 * 30px / 2);
 }
 
 .team .card {
-  padding-bottom: 30px;
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin: calc(30px / 2);
+
   background: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -289,6 +294,10 @@ img {
 /* Основная часть страници "Портфолио" */
 
 /* Блок Портфолио */
+
+.portfolio {
+  padding: 94px 0;
+}
 
 .portfolio .menu {
   display: flex;
@@ -336,7 +345,6 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--main-background-color);
-  border: 1px solid #eeeeee;
 }
 
 .portfolio .card:nth-child(3n + 3) {
@@ -347,8 +355,11 @@ img {
   margin-bottom: 0;
 }
 
-.img {
-  margin-bottom: 20px;
+.card > .discription {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio .tittle {
@@ -359,7 +370,6 @@ img {
 }
 
 .portfolio .text {
-  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -371,12 +381,9 @@ img {
 /* Футер */
 
 .footer {
-  background-color: var(--footer-background-color);
-}
+  padding: 60px 0;
 
-.footer > .conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
 }
 
 .footer .logo {
